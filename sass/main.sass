@@ -1,0 +1,231 @@
+@import vars
+@import fonts
+@import libs
+
+::placeholder
+	color: #666   
+
+::selection
+	color: #888
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: 'Montserrat', sans-serif
+	overflow-x: hidden
+	color: $text
+
+.button-white
+	padding: 20px 18px 20px 20px
+	font-size: 14px
+	text-transform: uppercase
+	background-color: #fff
+	border: 1px solid #E4E4E4
+	border-radius: 0
+	cursor: pointer
+
+.button-black
+	padding: 20px 18px 20px 20px
+	font-size: 14px
+	text-transform: uppercase
+	background-color: #333333
+	border-radius: 0
+	color: #fff
+	cursor: pointer
+
+.header 
+	height: 100vh
+	width: 100%
+	text-transform: uppercase
+
+.nav 
+	width: 95%
+	margin: auto
+
+.d-flex 
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+
+li 
+	list-style-type: none
+
+a 
+	text-decoration: none
+	color: $text
+	font-size: 14px
+	transition: all .4s ease
+	border-sizing: border-box
+
+a:hover 
+	color: $accent
+	text-decoration: none
+	border-bottom: 4px solid $accent
+
+ul 
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	margin: 0
+
+.container-nav
+	padding: 20px 0
+
+
+.menu-open
+	display: none
+
+
+.logo 
+	background-image: url(../img/_src/logo.jpg)
+	width: 50px
+	height: 50px
+	background-size: contain
+
+
+.personal 
+	margin-left: auto
+
+.menu-item
+	margin-right: 17px
+
+.personal-item 
+	margin-right: 20px
+	display: flex
+	white-space: nowrap
+
+.personal-item a .fa 
+	margin-right: 8px
+
+
+.personal-item:last-child
+	margin-right: 0
+
+.container-product 
+	justify-content: space-between
+	width: 90%
+	margin: auto
+	padding-top: 40px
+
+.product-img
+	background-image: url(../img/_src/sneakers.jpg) 
+	background-repeat: no-repeat
+	background-position: center center 
+	background-size: contain
+	width: 60%
+	height: 296px
+
+.favorites 
+	border: 1px solid #E4E4E4
+	width: 50px
+	height: 50px
+	color: #E4E4E4
+	position: relative
+	.fa 
+		position: absolute
+		top: 35%
+		left: 32%
+
+.product-title
+	margin-top: 35px
+
+.title 
+	font-size: 25px
+    	
+.h1
+	font-size: 35px
+	font-weight: 400
+
+.price 
+	margin-bottom: 20px
+
+.sneakers-colors
+	margin-bottom: 10px
+
+.sneakers-color
+	color: #0089CF
+	&:hover
+		border: none
+		color: #085B85
+
+.img-colors 
+	margin-bottom: 20px
+
+.img-color 
+	margin-right: 10px
+
+.btns .size 
+	text-transform: none
+	margin-bottom: 15px
+
+.dropdown-toggle::after
+	margin-left: 40px
+	border-top: .5em solid
+    border-right: .5em solid transparent
+    border-left: .5em solid 
+
+
+
+@media screen and (max-width: 992px)
+	a 
+		font-size: 12px
+	
+	.menu-item
+		margin-right: 12px
+
+	.personal-item 
+		margin-right: 15px
+
+	.personal-item a .fa 
+		margin-right: 3px
+
+@media screen and (max-width: 768px)
+	.product-title
+		margin-top: 25px
+
+	.title 
+		font-size: 20px
+	    	
+	.h1
+		font-size: 30px
+	
+	.price 
+		margin-bottom: 15px
+	
+	.logo 
+		width: 30px
+		height: 30px
+	
+	.personal 
+		margin-left: auto
+	
+	.personal-item 
+		margin-right: 10px
+
+	.container-nav
+		
+	
+	.menu 
+		margin-left: -30px
+
+@media screen and (max-width: 705px)
+	.menu 
+		display: none
+	.menu-open
+		display: block
+// Custom Sass / Remove before use
+
